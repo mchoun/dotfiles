@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>customSites</key>
+	<dict>
+		<key>95421578-0EBC-4115-B493-7E93B81846F3</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>jira</string>
+			<key>text</key>
+			<string>JIRA</string>
+			<key>url</key>
+			<string>https://paypal.atlassian.net/jira/search?searchString={query}</string>
+		</dict>
+		<key>C708AEF0-EC1E-4C17-918C-198112D5C0C3</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>con</string>
+			<key>text</key>
+			<string>Confluence</string>
+			<key>url</key>
+			<string>https://paypal.atlassian.net/wiki/search?text={query}</string>
+		</dict>
+	</dict>
+</dict>
+</plist>
