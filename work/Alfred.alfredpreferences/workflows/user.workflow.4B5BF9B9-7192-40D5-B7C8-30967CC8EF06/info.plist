@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>com.alfredapp.andrew.gettingstarted.variables</string>
+	<key>connections</key>
+	<dict>
+		<key>65EFA218-6BDF-4537-BE5E-D62BF72D4FA1</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>D8234C8C-1C7B-4DC7-82BD-2E05A1A56B6B</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>AE82E056-9E03-4DFB-8FCC-AC20DDE3137B</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>65EFA218-6BDF-4537-BE5E-D62BF72D4FA1</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>D8234C8C-1C7B-4DC7-82BD-2E05A1A56B6B</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>A4E2ED96-3FF8-4259-9120-E42A8ACCE904</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Andrew Pepperrell</string>
+	<key>description</key>
+	<string>Workflow variables can be used for general workflow configuration, or more complex control throughout the workflow</string>
+	<key>disabled</key>
+	<true/>
+	<key>name</key>
+	<string>Workflow Variables - Getting Started</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alignment</key>
+				<integer>0</integer>
+				<key>backgroundcolor</key>
+				<string></string>
+				<key>fadespeed</key>
+				<integer>0</integer>
+				<key>fillmode</key>
+				<integer>0</integer>
+				<key>font</key>
+				<string></string>
+				<key>ignoredynamicplaceholders</key>
+				<false/>
+				<key>largetypetext</key>
+				<string>The original keyword:
+'{var:keyword}'
+
+The output from the script:
+'{query}'
+
+A variable set in the Arg and Var Object:
+'{var:anothervariable}'</string>
+				<key>textcolor</key>
+				<string></string>
+				<key>wrapat</key>
+				<integer>50</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.largetype</string>
+			<key>uid</key>
+			<string>A4E2ED96-3FF8-4259-9120-E42A8ACCE904</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>echo -n The typed query: $typedquery</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>D8234C8C-1C7B-4DC7-82BD-2E05A1A56B6B</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>{var:keyword}</string>
+				<key>subtext</key>
+				<string>Example of setting a keyword using workflow variables</string>
+				<key>text</key>
+				<string>Keyword from Variable</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>AE82E056-9E03-4DFB-8FCC-AC20DDE3137B</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string></string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
+					<key>anothervariable</key>
+					<string>Another Variable!</string>
+					<key>typedquery</key>
+					<string>{query}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>65EFA218-6BDF-4537-BE5E-D62BF72D4FA1</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string>Workflow variables are useful for general configuration, as well as more complex control throughout your workflow.
+
+Variables can be added from the [x] button in the top right of the workflow editor. This is a useful place to keep workflow configuration in a single list, especially if you are sharing your workflow.
+
+Select "Don't Export" if you'd like a specific variable to be stripped when you export a workflow. For example, this is useful if you have set your own API key, and want to leave the value blank for users to add their own.
+
+Variables are migrated when a user updates a workflow, so if they have changed a keyword variable, for example, it will be maintained.</string>
+	<key>uidata</key>
+	<dict>
+		<key>65EFA218-6BDF-4537-BE5E-D62BF72D4FA1</key>
+		<dict>
+			<key>note</key>
+			<string>2. You can also set variables within the workflow stream using the Arg and Vars object.
+
+In this example, the {query} output from the keyword is moved to a variable.</string>
+			<key>xpos</key>
+			<integer>290</integer>
+			<key>ypos</key>
+			<integer>90</integer>
+		</dict>
+		<key>A4E2ED96-3FF8-4259-9120-E42A8ACCE904</key>
+		<dict>
+			<key>note</key>
+			<string>4. You can configure objects to use variables. This Large Type object is echoing out some of those variables.</string>
+			<key>xpos</key>
+			<integer>650</integer>
+			<key>ypos</key>
+			<integer>60</integer>
+		</dict>
+		<key>AE82E056-9E03-4DFB-8FCC-AC20DDE3137B</key>
+		<dict>
+			<key>note</key>
+			<string>1. The keyword for this Keyword Input has been set in the Workflow variables from the [x] button in the top right.
+
+If you haven't changed this, you can run this workflow with the keyword 'testkeyword'.</string>
+			<key>xpos</key>
+			<integer>60</integer>
+			<key>ypos</key>
+			<integer>60</integer>
+		</dict>
+		<key>D8234C8C-1C7B-4DC7-82BD-2E05A1A56B6B</key>
+		<dict>
+			<key>note</key>
+			<string>3. Any variables which have been set within the workflow or workflow stream are also set as environment variables on a script.</string>
+			<key>xpos</key>
+			<integer>440</integer>
+			<key>ypos</key>
+			<integer>60</integer>
+		</dict>
+	</dict>
+	<key>userconfigurationconfig</key>
+	<array/>
+	<key>variables</key>
+	<dict>
+		<key>keyword</key>
+		<string>testkeyword</string>
+	</dict>
+	<key>version</key>
+	<string>1.0</string>
+	<key>webaddress</key>
+	<string>https://www.alfredapp.com</string>
+</dict>
+</plist>

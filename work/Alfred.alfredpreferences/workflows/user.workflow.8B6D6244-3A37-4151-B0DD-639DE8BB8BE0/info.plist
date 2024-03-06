@@ -32,6 +32,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>39B7855B-A3AF-4C5D-AD60-259456782AEF</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>7DA4E820-D977-4B3A-A94E-A0040196CAAC</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>413C6C1B-BBF4-44E3-AA24-541AC369575F</key>
 		<array>
 			<dict>
@@ -50,6 +63,45 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>B0B027D6-3488-48A3-89F8-9AC523765E97</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>50872DDC-6734-4EEB-92D5-684C5BF22F31</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>D000533A-E92B-4365-B7A0-BF102C500D8E</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>5F9DB3BB-652E-479E-82DC-A19A36C8EC6E</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>50872DDC-6734-4EEB-92D5-684C5BF22F31</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>7DA4E820-D977-4B3A-A94E-A0040196CAAC</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>5F9DB3BB-652E-479E-82DC-A19A36C8EC6E</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -78,6 +130,19 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>25052730-B804-467E-A3A8-38DE51D2E3C2</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>D000533A-E92B-4365-B7A0-BF102C500D8E</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>E52D37CD-04A3-4824-A605-AC50FD2FF1F1</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -342,6 +407,126 @@ Thanks,
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>autopaste</key>
+				<true/>
+				<key>clipboardtextrtf</key>
+				<string>{\rtf1\ansi\ansicpg1252\cocoartf2759
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 HelveticaNeue;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0\c84706\cname controlTextColor;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs26 \cf2 Hello \{var:aename\} - I've accepted IHR case \{clipboard\} for \{var:merchantname\}.}</string>
+				<key>ignoredynamicplaceholders</key>
+				<false/>
+				<key>transient</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>E52D37CD-04A3-4824-A605-AC50FD2FF1F1</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>AE Name</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>7DA4E820-D977-4B3A-A94E-A0040196CAAC</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>keyword</key>
+				<string>newihr</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.snippet</string>
+			<key>uid</key>
+			<string>39B7855B-A3AF-4C5D-AD60-259456782AEF</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>Merchant Name</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>50872DDC-6734-4EEB-92D5-684C5BF22F31</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>{query}</string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
+					<key>merchantname</key>
+					<string>{query}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>D000533A-E92B-4365-B7A0-BF102C500D8E</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string></string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
+					<key>aename</key>
+					<string>{query}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>5F9DB3BB-652E-479E-82DC-A19A36C8EC6E</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string>This Snippet Trigger example workflow contains 4 types of actions:
@@ -389,6 +574,19 @@ Need help with workflows? Pop by the forum (alfredforum.com) if you have any fur
 			<key>ypos</key>
 			<real>400</real>
 		</dict>
+		<key>39B7855B-A3AF-4C5D-AD60-259456782AEF</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>7</integer>
+			<key>note</key>
+			<string>1. Trigger the workflow with the trigger you've set to \\thanksmsg
+
+(Set the keyword at the top, and the shared prefix is the same as above)</string>
+			<key>xpos</key>
+			<real>40</real>
+			<key>ypos</key>
+			<real>880</real>
+		</dict>
 		<key>413C6C1B-BBF4-44E3-AA24-541AC369575F</key>
 		<dict>
 			<key>colorindex</key>
@@ -410,6 +608,27 @@ Need help with workflows? Pop by the forum (alfredforum.com) if you have any fur
 			<real>40</real>
 			<key>ypos</key>
 			<real>30</real>
+		</dict>
+		<key>50872DDC-6734-4EEB-92D5-684C5BF22F31</key>
+		<dict>
+			<key>xpos</key>
+			<real>390</real>
+			<key>ypos</key>
+			<real>880</real>
+		</dict>
+		<key>5F9DB3BB-652E-479E-82DC-A19A36C8EC6E</key>
+		<dict>
+			<key>xpos</key>
+			<real>335</real>
+			<key>ypos</key>
+			<real>910</real>
+		</dict>
+		<key>7DA4E820-D977-4B3A-A94E-A0040196CAAC</key>
+		<dict>
+			<key>xpos</key>
+			<real>200</real>
+			<key>ypos</key>
+			<real>880</real>
 		</dict>
 		<key>993AC03B-FCA7-41F5-AC3A-CC0BB3546DF5</key>
 		<dict>
@@ -453,6 +672,13 @@ Need help with workflows? Pop by the forum (alfredforum.com) if you have any fur
 			<key>ypos</key>
 			<real>400</real>
 		</dict>
+		<key>D000533A-E92B-4365-B7A0-BF102C500D8E</key>
+		<dict>
+			<key>xpos</key>
+			<real>535</real>
+			<key>ypos</key>
+			<real>910</real>
+		</dict>
 		<key>E040AA08-9CB1-43D7-97D0-A5A94BCB4956</key>
 		<dict>
 			<key>colorindex</key>
@@ -463,6 +689,17 @@ Need help with workflows? Pop by the forum (alfredforum.com) if you have any fur
 			<real>410</real>
 			<key>ypos</key>
 			<real>630</real>
+		</dict>
+		<key>E52D37CD-04A3-4824-A605-AC50FD2FF1F1</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>2</integer>
+			<key>note</key>
+			<string>3. The snippet content and dynamically added recipient's name are pasted to the frontmost app.</string>
+			<key>xpos</key>
+			<real>625</real>
+			<key>ypos</key>
+			<real>870</real>
 		</dict>
 		<key>F2B581D8-4FAD-4429-B5DD-DD5A9BE2C1CE</key>
 		<dict>
