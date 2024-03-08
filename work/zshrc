@@ -120,6 +120,9 @@ alias ag='ag --path-to-ignore ~/.ignore'
 alias dbc='defaultbrowser chrome'
 alias dbb='defaultbrowser browser'
 
+
+cdl() {cd "$1" && l}
+
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
