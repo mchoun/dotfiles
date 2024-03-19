@@ -9,3 +9,4 @@
   - [ ] Download terminal font
 - Terminal setup
   - [ ] `.zsh` file
+  - [ ] `tmux.conf` file
