@@ -1,15 +1,19 @@
 - defaults:
     link:
       relink: true
+      path: work/
 
 - clean: ['~']
 
 - link:
-    ~/.vim: vim
-    ~/.vimrc: vimrc
-
-- create:
-    - ~/.vim/undo-history
+    ~/.zshrc: work/zshrc
+    ~/.tmux.conf: work/tmux.conf
+    ~/.config/nvim:
+      create: true
+      path: work/nvim
+    ~/.config/tmuxinator:
+      create: true
+      path: work/tmuxinator
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
