@@ -1,0 +1,15 @@
+- defaults:
+    link:
+      relink: true
+
+- clean: ['~']
+
+- link:
+    ~/.zshrc: personal/zshrc
+    ~/.tmux.conf: personal/tmux.conf
+    ~/.config/nvim:
+      create: true
+      path: personal/nvim
+
+- shell:
+    - [git submodule update --init --recursive, Installing submodules]

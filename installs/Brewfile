@@ -1,0 +1,4 @@
+
+brew "bat"
+brew "bat-extras"
+brew "fzf"
