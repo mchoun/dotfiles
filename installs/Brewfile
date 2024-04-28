@@ -2,3 +2,4 @@
 brew "bat"
 brew "bat-extras"
 brew "fzf"
+brew "zsh-syntax-highlighting"

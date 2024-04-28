@@ -47,7 +47,6 @@ plugins=(
   brew
   git 
   zsh-autosuggestions
-  zsh-syntax-highlighting
   z
   )
 
@@ -94,8 +93,7 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 
 # Configuration for node to trust the PayPal Proxy Certificates
-export NODE_EXTRA_CA_CERTS='/usr/local/etc/openssl/certs/paypal_proxy_cacerts.pem'
-
 export EDITOR=nvim
 
 fpath=(~/.zsh.d/ $fpath)
+source /Users/mchoun/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
