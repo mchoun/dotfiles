@@ -97,3 +97,5 @@ export NODE_EXTRA_CA_CERTS='/usr/local/etc/openssl/certs/paypal_proxy_cacerts.pe
 export EDITOR=nvim
 
 fpath=(~/.zsh.d/ $fpath)
+# Set up fzf key bindings and fuzzy completion
+eval "$(fzf --zsh)"
