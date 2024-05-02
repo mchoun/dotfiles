@@ -2,6 +2,7 @@
     link:
       relink: true
       path: work/
+      force: true
 
 - clean: ['~']
 
