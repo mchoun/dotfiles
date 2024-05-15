@@ -82,10 +82,17 @@ alias ag='ag --path-to-ignore ~/.ignore'
 alias dbc='defaultbrowser chrome'
 alias dbb='defaultbrowser browser'
 alias batp='bat package.json'
+alias tree='tree -I node_modules'
 
 cdl() {cd "$1" && l}
 
 cag() {ag -l threedomain --ignore applepay | fzf --preview 'bat --color=always {}'}
+
+# find in file using ripgrep and preview TODO: How can this be done with ag? 
+fif() {
+  if [ ! "$#" -gt 0 ]; then echo "Need a string to search for!"; return 1; fi
+  rg --files-with-matches --no-messages "$1" | fzf --preview "highlight -O ansi -l {} 2> /dev/null | rg --colors 'match:bg:yellow' --ignore-case --pretty --context 10 '$1' || rg --ignore-case --pretty --context 10 '$1' {}"
+}
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
@@ -120,6 +127,5 @@ export EDITOR=nvim
 fpath=(~/.zsh.d/ $fpath)
 # Set up fzf key bindings and fuzzy completion
 eval "$(fzf --zsh)"
-eval "$(pyenv init --path)"
-alias python="$(pyenv which python)"
+# fzf with git using ctrl commands
 source ~/fzf-git.sh/fzf-git.sh
