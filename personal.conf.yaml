@@ -6,7 +6,7 @@
 
 - link:
     ~/.zshrc: personal/zshrc
-    ~/.tmux.conf: personal/tmux.conf
+    ~/.tmux.conf: shared/tmux.conf
     ~/.config/nvim:
       create: true
       path: personal/nvim

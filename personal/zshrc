@@ -67,6 +67,9 @@ source $ZSH/oh-my-zsh.sh
 alias sc="source ~/.zshrc"
 alias ec="nvim ~/.zshrc"
 
+#nvim alt config
+alias nvim-kickstart='NVIM_APPNAME="nvim-kickstart" nvim'
+
 #npm aliases
 alias nrdb='npm run debug'
 alias nrd='npm run dev'
