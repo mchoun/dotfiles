@@ -59,3 +59,7 @@ windows:
       root: ~/dev/pp-js-sdk/internal/xotestbednodeweb
       panes: 
         - npm run dev
+  - v2-demo: 
+      root: ~/dev/pp-js-sdk/public/paypal-docs-examples/advanced-integration/v2 
+      panes: 
+        - npm start
