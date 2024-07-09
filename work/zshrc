@@ -67,6 +67,7 @@ source $ZSH/oh-my-zsh.sh
 #config editing
 alias sc="source ~/.zshrc"
 alias ec="nvim ~/.zshrc"
+alias et="nvim ~/.tmux.conf"
 
 #npm aliases
 alias nrdb='npm run debug'
@@ -83,12 +84,21 @@ alias mux='tmuxinator'
 alias dbc='defaultbrowser chrome'
 alias dbb='defaultbrowser browser'
 alias batp='bat package.json'
+alias batr='bat README.md'
 alias tree='tree -I node_modules'
+
+# ls aliases
+alias l='eza --oneline --group-directories-first -all -h --no-user'
 
 cdl() {cd "$1" && l}
 
 cag() {
-  ag -l "$1" | fzf --preview 'ag '$1' {}'
+  if [ ! "$#" -gt 0 ]; then echo "Need a string to search for!"; return 1; fi
+  local search_pattern="$1"
+    
+    ag --nocolor --nogroup "$search_pattern" | \
+    fzf --preview "ag --color --nogroup --line-numbers '$search_pattern' {}" --preview-window=right:60% | \
+    xargs -I {} code . --new-window {}
 }
 
 # find in file using ripgrep and preview TODO: How can this be done with ag? 
