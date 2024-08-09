@@ -81,16 +81,19 @@ alias lg='lazygit'
 alias man='batman'
 alias tmuxa='tmux attach'
 alias mux='tmuxinator'
-alias dbc='defaultbrowser chrome'
-alias dbb='defaultbrowser browser'
 alias batp='bat package.json'
 alias batr='bat README.md'
 alias tree='tree -I node_modules'
-alias fda='fd -H -I'
 
 # ls aliases
 alias l='eza --oneline --group-directories-first -all -h --no-user'
+alias fda='fd -H -I'
 
+# git aliases
+gbclean() {
+  git branch -d $(git branch --merged=develop | grep -v develop)
+  git fetch --prune
+}
 cdl() {cd "$1" && l}
 
 cag() {
