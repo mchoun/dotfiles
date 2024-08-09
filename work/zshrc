@@ -86,6 +86,7 @@ alias dbb='defaultbrowser browser'
 alias batp='bat package.json'
 alias batr='bat README.md'
 alias tree='tree -I node_modules'
+alias fda='fd -H -I'
 
 # ls aliases
 alias l='eza --oneline --group-directories-first -all -h --no-user'
