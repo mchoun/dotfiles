@@ -28,3 +28,9 @@ Swapping windows key
 - bat man pages
   - install bat
   - command to point it at the correct man pager
+
+## Profiles
+Current profiles are `work` and `personal`. Configurations that are shared between the two profiles are in the shared folder.
+
+## Usage
+Run `./install {profile_name}`.
