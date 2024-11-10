@@ -85,6 +85,7 @@ alias ag='ag --path-to-ignore ~/.ignore'
 alias dbc='defaultbrowser chrome'
 alias dbb='defaultbrowser browser'
 alias batp='bat package.json'
+alias batr='bat README.md'
 
 cdl() {cd "$1" && l}
 
