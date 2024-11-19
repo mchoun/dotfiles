@@ -51,15 +51,13 @@ windows:
       panes:
         - scnw:
           - cd ~/dev/pp-js-sdk/internal/smartcomponentnodeweb
-          - npm run debug
+          - nvm use
         - csnw:
           - cd ~/dev/pp-js-sdk/internal/clientsdknodeweb
-          - npm run debug
+          - nvm use
   - testbed: 
       root: ~/dev/pp-js-sdk/internal/xotestbednodeweb
       panes: 
-        - npm run dev
+        - nvm use
   - v2-demo: 
-      root: ~/dev/pp-js-sdk/public/paypal-docs-examples/advanced-integration/v2 
-      panes: 
-        - npm start
+      root: ~/dev/pp-js-sdk/public/paypal-docs-examples
