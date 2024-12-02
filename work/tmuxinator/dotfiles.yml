@@ -51,3 +51,6 @@ windows:
         - home:
         - dotfiles: 
           - cd ~/dotfiles
+        - logseq: 
+          - cd ~/Documents/mervin-paypal-logseq-main/
+

@@ -55,6 +55,10 @@ windows:
         - csnw:
           - cd ~/dev/pp-js-sdk/internal/clientsdknodeweb
           - nvm use
+  - checkout-comp: 
+      root: ~/dev/pp-js-sdk/public/paypal-checkout-components/
+      panes: 
+        - nvm use
   - testbed: 
       root: ~/dev/pp-js-sdk/internal/xotestbednodeweb
       panes: 
