@@ -1,12 +1,16 @@
 - defaults:
     link:
       relink: true
+      force: true
 
 - clean: ['~']
 
 - link:
     ~/.zshrc: personal/zshrc
     ~/.tmux.conf: shared/tmux.conf
+    ~/.config/karabiner:
+      create: true
+      path: shared/karabiner
     ~/.config/nvim:
       create: true
       path: personal/nvim

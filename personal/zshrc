@@ -103,3 +103,6 @@ fpath=(~/.zsh.d/ $fpath)
 source /Users/mchoun/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 eval $(thefuck --alias)
+
+# Set up fzf key bindings and fuzzy completion
+source <(fzf --zsh)
