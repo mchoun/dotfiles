@@ -47,7 +47,6 @@ plugins=(
   zsh-autosuggestions
   zsh-syntax-highlighting
   aliases
-  z
   # fzf-zsh-plugin
   )
 
@@ -122,6 +121,9 @@ export NVM_DIR="$HOME/.nvm"
 
 # Configuration for node to trust the PayPal Proxy Certificates
 export NODE_EXTRA_CA_CERTS='/usr/local/etc/openssl/certs/paypal_proxy_cacerts.pem'
+# node.js org mirros
+export NVM_NODEJS_ORG_MIRROR=https://artifactory.paypalcorp.com/artifactory/nodejs-dist
+export NODEJS_ORG_MIRROR=https://artifactory.paypalcorp.com/artifactory/nodejs-dist
 
 # -- Use fd instead of fzf --
 
@@ -152,9 +154,12 @@ export EDITOR=nvim
 fpath=(~/.zsh.d/ $fpath)
 # Set up fzf key bindings and fuzzy completion
 eval "$(fzf --zsh)"
+eval "$(zoxide init zsh --cmd cd)"
 # fzf with git using ctrl commands
 source ~/fzf-git.sh/fzf-git.sh
 
 # Configuration for Python, PIP, OpenSSL to trust the PayPal Proxy Certificates
 export REQUESTS_CA_BUNDLE='/usr/local/etc/openssl/certs/combined_cacerts.pem'
 export SSL_CERT_FILE='/usr/local/etc/openssl/certs/combined_cacerts.pem'
+export CURL_CA_BUNDLE='/usr/local/etc/openssl/certs/combined_cacerts.pem'
+CURL_SSL_BACKND=secure-transport
