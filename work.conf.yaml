@@ -9,6 +9,9 @@
 - link:
     ~/.zshrc: work/zshrc
     ~/.tmux.conf: shared/tmux.conf
+    ~/.config/karabiner:
+      create: true
+      path: work/karabiner
     ~/.config/nvim:
       create: true
       path: work/nvim
