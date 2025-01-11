@@ -13,10 +13,19 @@
   - [ ] figure out why zsh session load is taking so long
 - Neovim setup
   - [ ] better markdown autocomplete for creating bullet point
+    - Better bullet points plugin? [source](https://linkarzu.com/posts/neovim/markdown-setup-2024/#where-are-all-these-files) [bullet.vim](https://github.com/bullets-vim/bullets.vim)
+  - [ ] turn off autocomplete in markdown files so that words are not offered for completion
   - [ ] allow `⌥ + backspace` and `⌘ + backspace` to work correctly. currently does not delete work or delete line the same same way that macos does
   - [ ] figure out `⌥ + arrow keys` so that they function the same way it does in macos
   - [ ] find a way for a better surround method such as `ysiw`. VSCode uses `surround.vim`
+    - [mini.surround](https://github.com/echasnovski/mini.surround)
   - [ ] find a better keybind for `backtick` so that it doesn't conflict with my tmux?
+
+  ### Tab workflow improvments
+
+  - [ ] add the root dir to the tabline tab ui
+  - [ ] look into tabman
+  - [ ] should i just use tmux windows instead?
 
 ## Brew List
 

@@ -49,8 +49,7 @@ windows:
       layout: even-horizontal
       panes:
         - home:
-        - dotfiles: 
-          - cd ~/dotfiles
-        - logseq: 
-          - cd ~/Documents/mervin-paypal-logseq-main/
-
+        - dotfiles:
+            - cd ~/dotfiles
+  - logseq:
+      - cd ~/Documents/mervin-paypal-logseq-main/

@@ -4,3 +4,6 @@
 --
 vim.opt.scrolloff = 8
 vim.opt.relativenumber = false
+
+vim.treesitter.language.register("html", "ejs")
+vim.treesitter.language.register("javascript", "ejs")

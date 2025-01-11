@@ -1,6 +1,6 @@
 # /Users/mchoun/.config/tmuxinator/hcf-dev.yml
 
-name: hcf-dev
+name: v5-dev
 root: ~/dev/pp-js-sdk
 
 # Optional tmux socket
@@ -45,23 +45,23 @@ root: ~/dev/pp-js-sdk
 # attach: false
 
 windows:
-  - main: 
+  - main:
   - scnw-csnw:
       layout: even-horizontal
       panes:
         - scnw:
-          - cd ~/dev/pp-js-sdk/internal/smartcomponentnodeweb
-          - nvm use
+            - cd ~/dev/pp-js-sdk/internal/smartcomponentnodeweb
+            - nvm use
         - csnw:
-          - cd ~/dev/pp-js-sdk/internal/clientsdknodeweb
-          - nvm use
-  - checkout-comp: 
+            - cd ~/dev/pp-js-sdk/internal/clientsdknodeweb
+            - nvm use
+  - checkout-comp:
       root: ~/dev/pp-js-sdk/public/paypal-checkout-components/
-      panes: 
+      panes:
         - nvm use
-  - testbed: 
+  - testbed:
       root: ~/dev/pp-js-sdk/internal/xotestbednodeweb
-      panes: 
+      panes:
         - nvm use
-  - v2-demo: 
+  - v2-demo:
       root: ~/dev/pp-js-sdk/public/paypal-docs-examples

@@ -14,7 +14,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
-# See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
+ # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # Set list of themes to pick from when loading at random
@@ -159,7 +159,7 @@ eval "$(zoxide init zsh --cmd cd)"
 source ~/fzf-git.sh/fzf-git.sh
 
 # Configuration for Python, PIP, OpenSSL to trust the PayPal Proxy Certificates
-export REQUESTS_CA_BUNDLE='/usr/local/etc/openssl/certs/combined_cacerts.pem'
-export SSL_CERT_FILE='/usr/local/etc/openssl/certs/combined_cacerts.pem'
-export CURL_CA_BUNDLE='/usr/local/etc/openssl/certs/combined_cacerts.pem'
-CURL_SSL_BACKND=secure-transport
+# export REQUESTS_CA_BUNDLE='/usr/local/etc/openssl/certs/combined_cacerts.pem'
+# export SSL_CERT_FILE='/usr/local/etc/openssl/certs/combined_cacerts.pem'
+# export CURL_CA_BUNDLE='/usr/local/etc/openssl/certs/combined_cacerts.pem'
+# CURL_SSL_BACKND=secure-transport
