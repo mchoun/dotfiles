@@ -47,7 +47,6 @@ plugins=(
   brew
   git 
   zsh-autosuggestions
-  z
   )
 
 source $ZSH/oh-my-zsh.sh
@@ -94,7 +93,6 @@ cdl() {cd "$1" && l}
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 
-# Configuration for node to trust the PayPal Proxy Certificates
 export EDITOR=nvim
 
 fpath=(~/.zsh.d/ $fpath)
@@ -104,3 +102,6 @@ eval $(thefuck --alias)
 
 # Set up fzf key bindings and fuzzy completion
 source <(fzf --zsh)
+
+# initialize zoxide
+eval "$(zoxide init zsh)"
