@@ -12,6 +12,7 @@
   - [x] `tmux.conf` file
   - [ ] figure out why zsh session load is taking so long
 - Neovim setup
+
   - [ ] better markdown autocomplete for creating bullet point
     - Better bullet points plugin? [source](https://linkarzu.com/posts/neovim/markdown-setup-2024/#where-are-all-these-files) [bullet.vim](https://github.com/bullets-vim/bullets.vim)
   - [ ] turn off autocomplete in markdown files so that words are not offered for completion
@@ -20,6 +21,7 @@
   - [ ] find a way for a better surround method such as `ysiw`. VSCode uses `surround.vim`
     - [mini.surround](https://github.com/echasnovski/mini.surround)
   - [ ] find a better keybind for `backtick` so that it doesn't conflict with my tmux?
+  - [ ] Currently keybinds for live grep (`<Space> + /`) and find files (`<Space><Space>`) default to cwd when they should be defaulting to root. It's based on the cwd of the file that I'm currently in but I want it to be the root of where nvim was started or possibly the root of neotree
 
   ### Tab workflow improvments
 

@@ -121,9 +121,6 @@ export NVM_DIR="$HOME/.nvm"
 
 # Configuration for node to trust the PayPal Proxy Certificates
 export NODE_EXTRA_CA_CERTS='/usr/local/etc/openssl/certs/paypal_proxy_cacerts.pem'
-# node.js org mirros
-export NVM_NODEJS_ORG_MIRROR=https://artifactory.paypalcorp.com/artifactory/nodejs-dist
-export NODEJS_ORG_MIRROR=https://artifactory.paypalcorp.com/artifactory/nodejs-dist
 
 # -- Use fd instead of fzf --
 
