@@ -23,6 +23,8 @@
   - [ ] find a better keybind for `backtick` so that it doesn't conflict with my tmux?
   - [ ] Currently keybinds for live grep (`<Space> + /`) and find files (`<Space><Space>`) default to cwd when they should be defaulting to root. It's based on the cwd of the file that I'm currently in but I want it to be the root of where nvim was started or possibly the root of neotree
 
+- Remove `oh-my-zsh` plugin manager and look into [zsh-unplugged](https://github.com/mattmc3/zsh_unplugged)
+
   ### Tab workflow improvments
 
   - [ ] add the root dir to the tabline tab ui

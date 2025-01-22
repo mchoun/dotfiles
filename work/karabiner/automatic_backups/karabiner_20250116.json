@@ -160,7 +160,6 @@
                     },
                     {
                         "description": "Better Shifting: Parentheses on shift keys",
-                        "enabled": false,
                         "manipulators": [
                             {
                                 "from": { "key_code": "left_shift" },
