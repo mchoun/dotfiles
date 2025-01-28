@@ -15,6 +15,9 @@
     ~/.config/nvim:
       create: true
       path: work/nvim
+    ~/.config/nvim-kickstart:
+      create: true
+      path: work/nvim-kickstart
     ~/.config/tmuxinator:
       create: true
       path: work/tmuxinator

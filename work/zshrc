@@ -1,11 +1,13 @@
-if [[ ! $(tmux list-sessions) ]]; then 
-  tmux
-fi
+
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
+if [[ ! $(tmux list-sessions) ]]; then 
+  tmux
 fi
 
 # Path to your oh-my-zsh installation.
@@ -54,6 +56,9 @@ alias mux='tmuxinator'
 alias msd='tmuxinator start dotfiles'
 alias ms5='tmuxinator start v5-dev'
 alias ms6='tmuxinator start v6-dev'
+
+#nvim alias
+alias nvim-kickstart='NVIM_APPNAME="nvim-kickstart" nvim'
 
 # ls aliases
 alias l='eza --oneline --group-directories-first -all -h --no-user'
