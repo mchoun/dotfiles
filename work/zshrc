@@ -59,6 +59,8 @@ alias ms6='tmuxinator start v6-dev'
 
 #nvim alias
 alias nvim-kickstart='NVIM_APPNAME="nvim-kickstart" nvim'
+alias nvk="nvim-kickstart"
+alias nv="nvim"
 
 # ls aliases
 alias l='eza --oneline --group-directories-first -all -h --no-user'
@@ -120,4 +122,5 @@ if [[ -f "$HOME/.zshpaypalenv" ]]; then
   source "$HOME/.zshpaypalenv" 
 fi
 
-# start tmux when shell loads - checks that tmux exist, in interactive shell, and doesn't run within tmux itself
+# set vi keys instead of emacs for command lines
+ set -o vi
