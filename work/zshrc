@@ -67,6 +67,7 @@ alias l='eza --oneline --group-directories-first -all -h --no-user'
 alias fda='fd -H -I'
 
 # git aliases
+alias gmod='git merge origin/$(git_develop_branch)'
 gbclean() {
   echo "Removing branches that have been merged with develop"
   git branch -d $(git branch --merged=develop | grep -v develop)
