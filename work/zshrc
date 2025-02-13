@@ -1,3 +1,4 @@
+zmodload zsh/zprof
 
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
@@ -111,13 +112,13 @@ _fzf_complete_git_add() {
 
 export EDITOR=nvim
 
-fpath=(~/.zsh.d/ $fpath)
 # Set up fzf key bindings and fuzzy completion
 eval "$(fzf --zsh)"
 eval "$(zoxide init zsh --cmd cd)"
 # fzf with git using ctrl commands
 source ~/fzf-git.sh/fzf-git.sh
 
+# source paypal specific env variables
 if [[ -f "$HOME/.zshpaypalenv" ]]; then
   echo "Sourcing PayPal ENV Exports"
   source "$HOME/.zshpaypalenv" 
@@ -125,3 +126,4 @@ fi
 
 # set vi keys instead of emacs for command lines
  set -o vi
+ zprof
