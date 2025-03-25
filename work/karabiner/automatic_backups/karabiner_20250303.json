@@ -128,7 +128,6 @@
                     },
                     {
                         "description": "Hyper Key: Right Option → left control + left option +  (⌃⌥)",
-                        "enabled": false,
                         "manipulators": [
                             {
                                 "from": {
@@ -209,14 +208,6 @@
                         "is_keyboard": true,
                         "product_id": 20548,
                         "vendor_id": 12815
-                    },
-                    "ignore": true
-                },
-                {
-                    "identifiers": {
-                        "is_keyboard": true,
-                        "product_id": 6505,
-                        "vendor_id": 12951
                     },
                     "ignore": true
                 }

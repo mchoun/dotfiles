@@ -17,7 +17,7 @@ keymap("n", "<A-k>", ":m .-2<CR>==", opts)
 
 -- Press jk fast to exit insert mode
 keymap("i", "jk", "<ESC>", opts)
-
+keymap("i", "JK", "<ESC>", opts)
 -- Visual --
 -- Move text up and down
 keymap("v", "<A-j>", ":m '>+1<CR>gv=gv", opts)
