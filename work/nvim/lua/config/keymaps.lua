@@ -23,6 +23,7 @@ keymap("i", "JK", "<ESC>", opts)
 keymap("v", "<A-j>", ":m '>+1<CR>gv=gv", opts)
 keymap("v", "<A-k>", ":m '<-2<CR>gv=gv", opts)
 keymap("v", "p", '"_dP', opts)
+keymap("v", "<leader>cl", 'y<ESC>oconsole.log({<C-r>"});<ESC>', opts)
 
 -- Visual Block --
 -- Move text up and down
