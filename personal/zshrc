@@ -105,3 +105,4 @@ source <(fzf --zsh)
 
 # initialize zoxide
 eval "$(zoxide init zsh)"
+export PATH="/opt/homebrew/opt/postgresql@15/bin:$PATH"
