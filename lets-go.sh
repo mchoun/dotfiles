@@ -27,7 +27,7 @@ Be sure you've read and understood the what will be applied.\033[0m\n"
 
 # If dependencies not met, install them
 if ! hash git 2>/dev/null; then
-  bash <(curl -s -L 'https://alicia.url.lol/prerequisite-installs')
+  bash <(curl -s -L 'https://raw.githubusercontent.com/mchoun/dotfiles/refs/heads/main/installs/prerequisites.sh')
 fi
 
 # If dotfiles not yet present then clone
