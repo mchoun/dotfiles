@@ -4,6 +4,8 @@
 
 ## TODO
 
+test 2025-05-14
+
 - Install script
   - [ ] Download repo
   - [ ] Download terminal font
