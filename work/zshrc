@@ -140,3 +140,10 @@ fi
 
 # set vi keys instead of emacs for command lines
  set -o vi
+
+# Configuration for Python, PIP, OpenSSL to trust the PayPal Proxy Certificates
+# export REQUESTS_CA_BUNDLE='/usr/local/etc/openssl/certs/combined_cacerts.pem'
+# export SSL_CERT_FILE='/usr/local/etc/openssl/certs/combined_cacerts.pem'
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init - zsh)"
