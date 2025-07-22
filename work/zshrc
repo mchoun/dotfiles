@@ -74,6 +74,8 @@ alias fda='fd -H -I'
 # git aliases
 alias gcoo='git checkout -'
 alias gmod='git merge origin/$(git_develop_branch)'
+alias gddh='git diff develop...HEAD'
+alias gddhf='git diff develop...HEAD --'
 gbclean() {
   echo "Removing branches that have been merged with develop"
   git branch -d $(git branch --merged=develop | grep -v develop)
