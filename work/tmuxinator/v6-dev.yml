@@ -45,14 +45,35 @@ root: ~/dev/pp-js-sdk/internal
 # attach: false
 
 windows:
-  - editor: 
-      panes:
-        - nvim
   - core-web-sdk:
-      root: ~/dev/pp-js-sdk/internal/core-web-sdk/ 
+      root: ~/dev/pp-js-sdk/internal/core-web-sdk/
       panes:
-        - nvm use
+      - editor:
+          - nvm -v
+          - nvim
   - websdknodeweb:
       root: ~/dev/pp-js-sdk/internal/websdknodeweb/
-      panes: 
-        - nvm use
+      panes:
+      - editor:
+          - nvm -v
+          - nvim
+  - terminal:
+      layout: even-vertical
+      panes:
+        - core-web-sdk:
+            - cd ~/dev/pp-js-sdk/internal/core-web-sdk/
+            - nvm use
+        - wsnw:
+            - cd ~/dev/pp-js-sdk/internal/websdknodeweb/
+            - nvm use
+  - dev-server:
+      layout: even-horizontal
+      panes:
+        - core-web-sdk:
+            - cd ~/dev/pp-js-sdk/internal/core-web-sdk/
+            - nvm use
+            - npm run dev
+        - wsnw:
+            - cd ~/dev/pp-js-sdk/internal/websdknodeweb/
+            - nvm use
+            - npm run dev
