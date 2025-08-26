@@ -47,6 +47,9 @@ alias nrt='npm run test'
 alias ns='npm start'
 alias nr='npm run'
 
+#nvm aliases
+alias nvv='nvm -v'
+
 #terminal aliases
 alias ag='ag --path-to-ignore ~/.ignore'
 alias lg='lazygit'
@@ -88,6 +91,16 @@ cdl() {cd "$1" && l}
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
+
+#used to enter yazi and then change directory to the cwd when quit using q
+function yy() {
+	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")"
+	yazi "$@" --cwd-file="$tmp"
+	if cwd="$(cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
+		cd -- "$cwd"
+	fi
+	rm -f -- "$tmp"
+}
 
 # -- Use fd instead of fzf --
 
@@ -150,3 +163,5 @@ export SSL_CERT_FILE='/usr/local/etc/openssl/certs/combined_cacerts.pem'
 export PYENV_ROOT="$HOME/.pyenv"
 [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init - zsh)"
+export NVM_NODEJS_ORG_MIRROR='https://artifactory.paypalcorp.com/artifactory/nodejs-dist'
+export NODEJS_ORG_MIRROR='https://artifactory.paypalcorp.com/artifactory/nodejs-dist'
