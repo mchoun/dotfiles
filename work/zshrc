@@ -36,7 +36,7 @@ plugins=(
 source $ZSH/oh-my-zsh.sh
 
 #config editing
-alias sc="source ~/.zshrc"
+alias sc="exec zsh"
 alias ec="nvim ~/.zshrc"
 alias et="nvim ~/.tmux.conf"
 
@@ -91,6 +91,11 @@ cdl() {cd "$1" && l}
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
+# measuring zsh startup time
+timezsh() {
+  shell=${1-$SHELL}
+  for i in $(seq 1 10); do /usr/bin/time $shell -i -c exit; done
+}
 
 #used to enter yazi and then change directory to the cwd when quit using q
 function yy() {
