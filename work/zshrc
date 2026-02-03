@@ -46,9 +46,10 @@ alias nrd='npm run dev'
 alias nrt='npm run test'
 alias ns='npm start'
 alias nr='npm run'
+alias ni='npm install'
 
 #nvm aliases
-alias nvv='nvm -v'
+alias nvv='nvm -v && nvim'
 
 #terminal aliases
 alias ag='ag --path-to-ignore ~/.ignore'
@@ -168,3 +169,4 @@ export SSL_CERT_FILE='/usr/local/etc/openssl/certs/combined_cacerts.pem'
 export PYENV_ROOT="$HOME/.pyenv"
 [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init - zsh)"
+export PATH="$HOME/.local/bin:$PATH"

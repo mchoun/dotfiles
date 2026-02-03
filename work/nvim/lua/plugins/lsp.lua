@@ -3,9 +3,9 @@ return {
     "neovim/nvim-lspconfig",
     opts = {
       inlay_hints = { enabled = false },
-      servers = {
-        flow = {},
-      },
+      -- servers = {
+      --   flow = {},
+      -- },
     },
   },
   { "bennypowers/template-literal-comments.nvim", opts = true, ft = {
