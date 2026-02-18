@@ -58,6 +58,7 @@ alias man='batman'
 alias batp='bat package.json'
 alias batr='bat README.md'
 alias tree='tree -I node_modules'
+alias hg='history | grep'
 
 #tmux aliases
 alias tmuxa='tmux attach'

@@ -12,6 +12,7 @@ return {
         "lua",
         "markdown",
         "markdown_inline",
+        "python",
         "regex",
         "tsx",
         "typescript",
@@ -20,10 +21,10 @@ return {
       },
     },
     -- ejs fuckery to get it to work
-    config = function(_, opts)
-      vim.treesitter.language.register("embedded_template", "ejs")
-      require("nvim-treesitter.config").setup(opts)
-    end,
+    -- config = function(_, opts)
+    --   vim.treesitter.language.register("embedded_template", "ejs")
+    --   require("nvim-treesitter.config").setup(opts)
+    -- end,
   },
   {
     "neovim/nvim-lspconfig",
